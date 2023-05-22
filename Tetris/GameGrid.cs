@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tetris
 {
-    internal class GamdeGrid
+    internal class GameGrid
     {
         private readonly int[,] grid;
         public int Rows { get; }
@@ -34,5 +34,31 @@ namespace Tetris
         {
             return IsInside(r, c) && grid[r, c] == 0;
         }
-    }
+
+        public bool IsRowFull(int r)
+        {
+            for(int c = 0; c < Columns; c++)
+            {
+                if (grid[r, c] == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public bool IsRowEmpty(int r)
+        {
+            for (int c = 0; c < Columns; c++)
+            {
+                if (grid[r, c] != 0)
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+    } 
 }
