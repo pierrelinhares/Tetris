@@ -30,7 +30,7 @@ namespace Tetris
 
         }
 
-        private void GameCanvas_Loaded()
+        private void GameCanvas_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
