@@ -29,5 +29,10 @@ namespace Tetris
         {
 
         }
+
+        private void GameCanvas_Loaded()
+        {
+
+        }
     }
 }
