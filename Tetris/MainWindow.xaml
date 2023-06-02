@@ -58,7 +58,7 @@
         <StackPanel Grid.Row="1"
                     Grid.Column="2"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Right">
+                    HorizontalAlignment="Left">
             <TextBlock Text="Next"
                                TextAlignment="Center"/>
 
@@ -83,9 +83,10 @@
                            FontSize="36"
                            TextAlignment="Center"/>
                 <Button Content="Play Again"
+                        Margin="0,20,0,0"
                         Background="Orange"
                         Padding="5"
-                        Click="PlayAgain_Click" Height="57" Width="206"/>
+                        Click="PlayAgain_Click"/>
             </StackPanel>
         </Grid>
     </Grid>
