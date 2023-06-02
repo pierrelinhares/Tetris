@@ -51,6 +51,7 @@ namespace Tetris
         public MainWindow()
         {
             InitializeComponent();
+            imageControls = SetupGameCanvas(gameState.GameGrid);
         }
 
         private Image[,] SetupGameCanvas(GameGrid grid)
@@ -76,6 +77,26 @@ namespace Tetris
             }
 
             return imageControls;
+        }
+
+        private void GameDraw(GameGrid grid) 
+        {
+            for (int r = 0; r < grid.Rows; r++)
+            {
+                for(int c = 0;c < grid.Columns; c++)
+                {
+                    int id = grid[r, c];
+                    imageControls[r, c].Source = tilesImages[id];
+                }
+            }
+        }
+
+        private void DrawBlock(Block block) 
+        {
+            foreach (Position p in block.TilePositions())
+            {
+                imageControls[p.Row, p.Column].Source = tilesImages[block.Id];
+            }
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
