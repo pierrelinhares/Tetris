@@ -105,6 +105,18 @@ namespace Tetris
             DrawBlock(gameState.CurrentBlock);
         }
 
+        private async Task GameLoop()
+        {
+            Draw(gameState);
+
+            while (!gameState.GameOver)
+            {
+                await Task.Delay(525);
+                gameState.MoveBlockDown();
+                Draw(gameState);
+            }
+        }
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (gameState.GameOver)
