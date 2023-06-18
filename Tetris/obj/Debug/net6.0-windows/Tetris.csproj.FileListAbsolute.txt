@@ -40,3 +40,4 @@ C:\Users\Pedro\Desktop\GITHUB\Tetris\Tetris\obj\Debug\net6.0-windows\refint\Tetr
 C:\Users\Pedro\Desktop\GITHUB\Tetris\Tetris\obj\Debug\net6.0-windows\Tetris.pdb
 C:\Users\Pedro\Desktop\GITHUB\Tetris\Tetris\obj\Debug\net6.0-windows\Tetris.genruntimeconfig.cache
 C:\Users\Pedro\Desktop\GITHUB\Tetris\Tetris\obj\Debug\net6.0-windows\ref\Tetris.dll
+C:\Users\Pedro\Desktop\GITHUB\Tetris\Tetris\obj\Debug\net6.0-windows\Tetris_Content.g.cs
